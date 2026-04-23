@@ -1,25 +1,25 @@
-🔐 LSB Image Steganography (C Project)
+# 🔐 LSB Image Steganography (C Project)
 
-📌 Overview
+## 📌 Overview
 - LSB Image Steganography is a technique used to hide secret information inside digital images.
 - It ensures that communication remains hidden by concealing data within another file.
 - Unlike cryptography, it hides the existence of the message itself.
 - Uses BMP images as the carrier for embedding data.
 
-🎯 Objective
+## 🎯 Objective
 - Design a command-line application for data hiding and retrieval.
 - Implement secure and invisible message embedding.
 - Provide decoding functionality to extract hidden data.
 
-🧠 Concept
+## 🧠 Concept
 - Based on Least Significant Bit (LSB) manipulation.
 - Modifies the smallest bit of image pixels to store data.
 - Changes are not visible to the human eye.
 - Exploits limitations of human visual perception.
 
-⚙️ Features
+## ⚙️ Features
 
-🔒 Encoding
+### 🔒 Encoding
 - Accepts `.bmp` image as input.
 - Accepts `.txt` file containing secret message.
 - Checks if image capacity is sufficient.
@@ -30,18 +30,18 @@
   - File data
 - Generates a stego image.
 
-🔓 Decoding
+### 🔓 Decoding
 - Extracts hidden data from stego image.
 - Verifies presence using magic string.
 - Reconstructs original message file.
 
-🧾 Requirements
+## 🧾 Requirements
 - Input image format: `.bmp`
 - Secret file format: `.txt`
 - Language: C
 - Platform: Command-line (Linux/Windows)
 
-🧪 Working Flow
+## 🧪 Working Flow
 
 ### Encoding Process
 - Read input BMP image.
@@ -60,17 +60,17 @@
 - Decode file metadata.
 - Recover original message.
 
-⚡ Advantages
+## ⚡ Advantages
 - High invisibility of hidden data.
 - Simple and efficient implementation.
 - Fast execution with low resource usage.
 
-⚠️ Limitations
+## ⚠️ Limitations
 - Limited storage capacity based on image size.
 - Not suitable for compressed formats like JPEG.
 - Less secure without encryption.
 
-🚀 Applications
+## 🚀 Applications
 - Secure communication
 - Digital watermarking
 - Data hiding in multimedia
