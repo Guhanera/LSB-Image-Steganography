@@ -1,0 +1,20 @@
+Image Steganography Tool
+
+Encoding (hide secret data):
+
+    ./a.out -e <src_img_file_name> <secret_file_name> <output_file_name(optional)>
+
+    src_img_file_name   → input image
+    secret_file_name    → file to hide
+    output_file_name    → stego image (default: stego.bmp)
+
+Decoding (extract secret data):
+
+    ./a.out -d <src_img_file_name> <output_file_name(optional)>
+
+    src_img_file_name   → stego image
+    output_file_name    → extracted data file (default: decoded.txt)
+
+Examples:
+    ./a.out -e input.bmp secret.txt
+    ./a.out -d stego.bmp
